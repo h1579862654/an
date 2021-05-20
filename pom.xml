@@ -10,7 +10,7 @@
 
 
     <dependencies>
-        <!-- mybits-->
+        <!-- mybits依赖-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
