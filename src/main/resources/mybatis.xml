@@ -3,10 +3,10 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <environments default="test">
+    <environments default="oracle">
 
-        <environment id="test">
-            <transactionManager type="jdbc"></transactionManager>
+        <environment id="oracle">
+            <transactionManager type="JDBC"></transactionManager>
 <!--            表示使用数据库连接池-->
             <dataSource type="pooled">
                 <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
@@ -15,9 +15,6 @@
                 <property name="password" value="tiger"/>
             </dataSource>
         </environment>
-
-
-
     </environments>
 <!--    使用映射文件-->
     <mappers>
