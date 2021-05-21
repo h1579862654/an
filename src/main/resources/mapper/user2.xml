@@ -13,7 +13,7 @@
 
     <insert id="ins" parameterType="com.beans.User2" >
         <selectKey keyProperty="id" order="BEFORE" resultType="int">
-            SELECT SEQ_USER2_ID.nextval from Dual
+            SELECT SEQ_USER2_ID.nextval()  from Dual
         </selectKey>
         insert into USER2 values (#{id},#{age},#{sex},#{state},#{name},#{pass},#{lastUP})
     </insert>
