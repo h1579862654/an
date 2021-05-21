@@ -19,5 +19,6 @@
 <!--    使用映射文件-->
     <mappers>
         <mapper resource="mapper/user2.xml"/>
+        <mapper resource="mapper/UserMapper.xml"/>
     </mappers>
 </configuration>
